@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { poppins } from "./fonts";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import Footer from "@/components/layout/footer";
+import Header from "@/components/layout/header";
 
 export const metadata: Metadata = {
   title: "Doctor+ Medical Landing Page",
@@ -16,7 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${poppins.className} w-fit sm:w-auto`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
