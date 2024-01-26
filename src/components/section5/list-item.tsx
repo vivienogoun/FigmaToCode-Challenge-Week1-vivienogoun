@@ -1,4 +1,3 @@
-import { sora } from "@/app/fonts";
 import React from "react";
 
 interface Section5ListItemProps {

@@ -6,6 +6,7 @@ export default function ChevronBack() {
       height="24"
       viewBox="0 0 24 24"
       fill="none"
+      className="cursor-pointer"
     >
       <path
         d="M15.375 5.25L8.625 12L15.375 18.75"

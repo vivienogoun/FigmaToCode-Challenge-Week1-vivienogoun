@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import MainButton from "../buttons/main-button";
 import MessageCircleIcon from "../icons/message-circle";
-import HamburgerMenu from "../icons/hamburger-menu";
 import { MobileNav } from "../mobile-nav";
 
 export default function Header() {
@@ -22,9 +21,6 @@ export default function Header() {
         </Link>
 
         {/* hamburger menu */}
-        {/* <button className="sm:hidden">
-          <HamburgerMenu />
-        </button> */}
         <div className="sm:hidden ">
           <MobileNav />
         </div>

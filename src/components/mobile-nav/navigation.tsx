@@ -1,6 +1,5 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { MenuItem } from "./menu-item";
 import Link from "next/link";
 import { sora } from "@/app/fonts";
 import WhiteButton from "../buttons/white-button";
@@ -52,10 +51,5 @@ export const Navigation = () => (
       </div>
       <WhiteButton icon={<WhatsappIcon stroke="#3A8EF6" />} text="Book now" />
     </div>
-    {/* {itemIds.map((i) => (
-      <MenuItem i={i} key={i} />
-    ))} */}
   </motion.ul>
 );
-
-const itemIds = [0, 1, 2, 3, 4];
