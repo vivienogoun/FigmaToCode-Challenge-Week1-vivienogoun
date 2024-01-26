@@ -17,26 +17,28 @@ import ChevronLeft from "@/components/icons/chevron-left";
 import ChevronRight from "@/components/icons/chevron-right";
 import Review from "@/components/section6/review";
 import { motion } from "framer-motion";
+import ChevronBack from "@/components/icons/chevron-back";
+import ChevronForward from "@/components/icons/chevron-forward";
 
 export default function Home() {
   return (
     // main content of the page i.e without header and footer
     <main className="flex min-h-screen flex-col items-center justify-between bg-[#F9FBFC] dark:bg-second">
       {/* section 1: presentation */}
-      <section className="bg-[#F2F7FF] flex flex-col items-center w-full p-24 pb-0 relative">
-        <div className="flex items-center m-auto mb-32">
+      <section className="bg-[#F2F7FF] flex flex-col items-center w-full p-0 sm:p-24 pb-0 relative">
+        <div className="flex flex-col-reverse sm:flex-row items-center mb-48 sm:mb-32 gap-12 sm:gap-0">
           {/* text content */}
           <div className="w-[50%] flex justify-center">
-            <div className="inline-flex flex-col items-start gap-8">
-              <div className="flex flex-col items-start gap-4">
+            <div className="inline-flex flex-col items-center sm:items-start gap-8">
+              <div className="flex flex-col items-center sm:items-start gap-4">
                 <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
                   Dr. Matthew Anderson
                 </p>
-                <p className="text-[#031432] text-5xl font-bold tracking-[120%] max-w-[500px]">
+                <p className="text-[#031432] text-center sm:text-left text-3xl sm:text-5xl font-bold tracking-[120%] max-w-[500px]">
                   A dedicated doctor you can trust
                 </p>
                 <p
-                  className={`${sora.className} text-second text-[16px] leading-6 max-w-[480px]`}
+                  className={`${sora.className} text-center sm:text-left text-second text-sm sm:text-[16px] leading-6 max-w-[480px]`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Elementum eget vel, nunc nulla feugiat. Metus ut.
@@ -54,15 +56,15 @@ export default function Home() {
             <Image
               src={"/section1-graphics.png"}
               alt=""
-              width={800}
-              height={800}
+              width={679}
+              height={517}
               className=""
             />
           </div>
         </div>
 
         {/* list items */}
-        <div className="flex justify-center items-start gap-6 absolute -bottom-9 w-fit m-auto">
+        <div className="flex flex-col sm:flex-row justify-center items-start gap-6 absolute -bottom-36 sm:-bottom-9 w-fit m-auto">
           <Section1ListItem
             icon={<ClockIcon />}
             title="24 hour service"
@@ -82,14 +84,11 @@ export default function Home() {
       </section>
 
       {/* section 2: about */}
-      <section className="flex justify-center items-center gap-32 mx-8 my-48">
+      <section className="flex flex-col sm:flex-row justify-center items-center gap-16 sm:gap-32 mx-8 mt-56 mb-24 sm:my-48">
         {/* image and plusicons */}
         <div
-          className="rounded-3xl w-[483px] h-[405px] relative"
-          style={{
-            background:
-              "linear-gradient(42deg, rgba(0, 191, 165, 0.27) 25.39%, rgba(64, 133, 247, 0.00) 131.52%), url('/section2-image.png'), lightgray -212.673px 0px / 143.998% 115.309% no-repeat",
-          }}
+          id="section2-image"
+          className="rounded-3xl w-[400px] sm:w-[483px] h-[405px] relative"
         >
           <PlusIcon className="w-8 h-8 absolute -top-8 right-40" />
           <PlusIcon className="w-12 h-12 absolute -left-12 top-24" />
@@ -98,7 +97,7 @@ export default function Home() {
         </div>
 
         {/* content */}
-        <div className="flex flex-col justify-center items-start gap-8 max-w-[485px]">
+        <div className="flex flex-col justify-center items-center sm:items-start gap-8 max-w-[485px]">
           <div className="flex flex-col items-start gap-4">
             <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
               About me
@@ -120,11 +119,11 @@ export default function Home() {
       </section>
 
       {/* section 3: services */}
-      <section className="bg-[#F2F7FF] flex flex-col gap-24 p-24 w-full">
+      <section className="bg-[#F2F7FF] flex flex-col items-center gap-24 p-16 sm:p-24 w-full">
         {/* top section */}
-        <div className="flex justify-around items-center m-auto gap-24">
+        <div className="flex flex-col-reverse sm:flex-row justify-around items-center m-auto gap-8 sm:gap-24">
           {/* content */}
-          <div className="inline-flex flex-col items-start gap-8 max-w-[485px]">
+          <div className="inline-flex flex-col items-center sm:items-start gap-8 max-w-[485px]">
             {/* texts */}
             <div className="flex flex-col items-start gap-4">
               <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
@@ -154,55 +153,61 @@ export default function Home() {
         </div>
 
         {/* services */}
-        <div className="flex flex-col items-center gap-10">
-          {/* row 1 */}
-          <div className="flex items-start gap-10">
-            {/* service 1 */}
-            <Section3ServicesItem
-              pathToImage="/section3/semiologia.png"
-              title="General"
-              description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-            {/* service 2 */}
-            <Section3ServicesItem
-              pathToImage="/section3/service2.png"
-              title="Pediatrics"
-              description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-            {/* service 3 */}
-            <Section3ServicesItem
-              pathToImage="/section3/service3.png"
-              title="Nutritional"
-              description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          {/* row 2 */}
-          <div className="flex items-start gap-10">
-            {/* service 4 */}
-            <Section3ServicesItem
-              pathToImage="/section3/healthy.png"
-              title="Cardiology"
-              description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-            {/* service 5 */}
-            <Section3ServicesItem
-              pathToImage="/section3/service5.png"
-              title="Ophthalmology"
-              description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-            {/* service 6 */}
-            <Section3ServicesItem
-              pathToImage="/section3/ambulance.png"
-              title="Orthopedics"
-              description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
-            />
-          </div>
-          <div></div>
+        {/* desktop: grid */}
+        <div className="sm:grid grid-cols-3 grid-rows-2 gap-10 hidden">
+          {/* service 1 */}
+          <Section3ServicesItem
+            pathToImage="/section3/semiologia.png"
+            title="General"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+          {/* service 2 */}
+          <Section3ServicesItem
+            pathToImage="/section3/service2.png"
+            title="Pediatrics"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+          {/* service 3 */}
+          <Section3ServicesItem
+            pathToImage="/section3/service3.png"
+            title="Nutritional"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+          {/* service 4 */}
+          <Section3ServicesItem
+            pathToImage="/section3/healthy.png"
+            title="Cardiology"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+          {/* service 5 */}
+          <Section3ServicesItem
+            pathToImage="/section3/service5.png"
+            title="Ophthalmology"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+          {/* service 6 */}
+          <Section3ServicesItem
+            pathToImage="/section3/ambulance.png"
+            title="Orthopedics"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+        </div>
+
+        {/* mobile: caroussel */}
+        <div className="flex items-center gap-4 sm:hidden">
+          <ChevronBack />
+          {/* service 1 */}
+          <Section3ServicesItem
+            pathToImage="/section3/semiologia.png"
+            title="General"
+            description="Lorem ipsum dolor sit amet, consecte tur adipiscing elit aliquet iTristique id nibh lobortis nunc"
+          />
+          <ChevronForward />
         </div>
       </section>
 
       {/* section 4: CTA */}
-      <section className="relative m-24">
+      <section className="relative m-16 sm:m-24">
         {/* info box */}
         <div className="flex flex-col items-center gap-3">
           <p className="text-green text-center text-[22px] font-medium leading-normal tracking-[.44px]">
@@ -217,11 +222,11 @@ export default function Home() {
           >
             <div className="flex flex-col justify-between items-center shrink-0 gap-8">
               <div className="flex flex-col justify-center items-center gap-4">
-                <p className="text-white text-center text-[32px] font-semibold leading-normal max-w-[903px]">
+                <p className="text-white text-center text-2xl sm:text-[32px] font-semibold leading-normal max-w-[400px] sm:max-w-[903px]">
                   Schedule a virtual or presential appointment today
                 </p>
                 <p
-                  className={`text-white text-center ${sora.className} text-[16px] leading-6 opacity-80 max-w-[676px]`}
+                  className={`text-white text-center ${sora.className} text-[16px] leading-6 opacity-80 max-w-[400px] sm:max-w-[676px]`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Egestas egestas viverra turpis habitant eu sociis fermentum
@@ -246,18 +251,15 @@ export default function Home() {
       </section>
 
       {/* section 5: video */}
-      <section className="m-24 flex flex-col items-center gap-8">
+      <section className="m-16 sm:m-24 flex flex-col items-center gap-8">
         <p className="text-green text-center text-[22px] font-medium tracking-[.44px]">
           Why Dr. Matthew Anderson?
         </p>
 
         {/* player */}
         <div
-          className="rounded-[32px] w-[1012px] h-[567px] flex justify-center items-center"
-          style={{
-            background:
-              "url('/section5/player-image.png'), lightgray 0px -23.075px / 100% 119.048% no-repeat", //linear-gradient(145deg, #1678F2 3.73%, #65A8FB 132.69%),
-          }}
+          id="video-player"
+          className="rounded-[32px] w-[400px] sm:w-[1012px] h-[385px] sm:h-[567px] flex justify-center items-center"
         >
           <Image
             src={"/section5/play-button.png"}
@@ -270,11 +272,11 @@ export default function Home() {
 
         {/* details */}
         <div className="flex flex-col items-center gap-4">
-          <p className="text-dark text-center text-[32px] font-semibold max-w-[800px]">
+          <p className="text-dark text-center text-[32px] font-semibold max-w-[400px] sm:max-w-[800px]">
             A dedicated doctor with the core mission to help
           </p>
           <p
-            className={`text-second text-center ${sora.className} text-[16px] leading-6 max-w-[843px]`}
+            className={`text-second text-center ${sora.className} text-sm sm:text-[16px] leading-6 max-w-[400px] sm:max-w-[843px]`}
           >
             orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin
             nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis
@@ -284,7 +286,7 @@ export default function Home() {
         </div>
 
         {/* listitems */}
-        <div className="flex items-start gap-8 mt-4">
+        <div className="flex flex-col sm:flex-row items-start gap-8 mt-4">
           <Section5ListItem
             icon={<ClockIcon />}
             text="+15 years of experience"
@@ -301,14 +303,14 @@ export default function Home() {
       </section>
 
       {/* section 6: review */}
-      <section className="bg-[#F2F7FF] w-full p-24 flex flex-col items-center gap-12">
+      <section className="bg-[#F2F7FF] w-full p-16 sm:p-24 flex flex-col items-center gap-12">
         {/* testimonials */}
         <div className="flex flex-col items-start gap-4 max-w-[676px]">
-          <p className="text-dark text-center text-[32px] font-semibold">
+          <p className="text-dark text-center text-2xl sm:text-[32px] font-semibold max-w-[400px] sm:max-w-[none]">
             What our great customers say about Dr. Matthew Anderson
           </p>
           <p
-            className={`text-second text-center ${sora.className} text-[16px] leading-6`}
+            className={`text-second text-center ${sora.className} text-sm sm:text-[16px] leading-6 max-w-[400px] sm:max-w-[none]`}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore
@@ -316,7 +318,8 @@ export default function Home() {
         </div>
 
         {/* content */}
-        <div className="flex items-center gap-4">
+        {/* desktop: grid */}
+        <div className="sm:flex items-center gap-4 hidden">
           <ChevronLeft />
 
           {/* reviews */}
@@ -355,6 +358,21 @@ export default function Home() {
             />
           </div>
           <ChevronRight />
+        </div>
+
+        {/* mobile: caroussel */}
+        <div className="flex items-center gap-4 sm:hidden">
+          <ChevronBack />
+          {/* review 1 */}
+          <Review
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+            author={{
+              pathToImage: "/section6/review1.png",
+              name: "Samy White",
+              title: "Cardiology Patient",
+            }}
+          />
+          <ChevronForward />
         </div>
       </section>
     </main>
