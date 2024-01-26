@@ -12,7 +12,7 @@ export default function Section5ListItem({
 }: Section5ListItemProps) {
   return (
     <div
-      className="flex py-2 px-4 items-center gap-4 rounded-xl shadow-[0_8px_23px_0_rgba(65,132,247,0.24)]"
+      className="flex justify-center py-2 px-4 items-center gap-4 w-[300px] rounded-xl shadow-[0_8px_23px_0_rgba(65,132,247,0.24)]"
       style={{
         background: "linear-gradient(145deg, #1678F2 3.73%, #65A8FB 132.69%)",
       }}

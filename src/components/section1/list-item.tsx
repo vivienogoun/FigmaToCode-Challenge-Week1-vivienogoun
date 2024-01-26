@@ -20,7 +20,7 @@ export default function Section1ListItem({
       }}
     >
       {icon}
-      <div className="flex flex-col justify-center items-start max-w-[185px]">
+      <div className="flex flex-col justify-center items-start max-w-[200px]">
         <p className="text-white text-center text-lg leading-normal font-semibold">
           {title}
         </p>
