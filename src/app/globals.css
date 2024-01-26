@@ -18,3 +18,36 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+/* css code */
+#video-player {
+  background: url("/section5/player-image-mobile.png"),
+    lightgray 0px -23.075px / 100% 119.048% no-repeat;
+}
+
+#section2-image {
+  background: linear-gradient(
+      42deg,
+      rgba(0, 191, 165, 0.27) 25.39%,
+      rgba(64, 133, 247, 0) 131.52%
+    ),
+    url("/section2-image-mobile.png"),
+    lightgray -212.673px 0px / 143.998% 115.309% no-repeat;
+}
+
+@media (min-width: 640px) {
+  #video-player {
+    background: url("/section5/player-image.png"),
+      lightgray 0px -23.075px / 100% 119.048% no-repeat;
+  }
+
+  #section2-image {
+    background: linear-gradient(
+        42deg,
+        rgba(0, 191, 165, 0.27) 25.39%,
+        rgba(64, 133, 247, 0) 131.52%
+      ),
+      url("/section2-image.png"),
+      lightgray -212.673px 0px / 143.998% 115.309% no-repeat;
+  }
+}
