@@ -20,7 +20,9 @@ export default function MainButton({ icon, text }: ButtonProps) {
       }}
     >
       {icon}
-      <span className={`text-white ${sora.className} text-lg font-semibold`}>
+      <span
+        className={`text-white ${sora.className} text-[16px] sm:text-lg font-semibold`}
+      >
         {text}
       </span>
     </motion.button>
