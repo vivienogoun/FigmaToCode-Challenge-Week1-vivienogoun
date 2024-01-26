@@ -4,11 +4,12 @@ import Link from "next/link";
 import MainButton from "../buttons/main-button";
 import MessageCircleIcon from "../icons/message-circle";
 import HamburgerMenu from "../icons/hamburger-menu";
+import { MobileNav } from "../mobile-nav";
 
 export default function Header() {
   return (
     <div className="bg-[#F2F7FF] p-8">
-      <div className="flex justify-around items-end sm:items-center gap-48 sm:m-auto w-full sm:max-w-fit">
+      <div className="relative flex justify-around items-end sm:items-center gap-48 sm:m-auto w-full sm:max-w-fit">
         {/* logo */}
         <Link href={"/"}>
           <Image
@@ -21,9 +22,12 @@ export default function Header() {
         </Link>
 
         {/* hamburger menu */}
-        <button className="sm:hidden">
+        {/* <button className="sm:hidden">
           <HamburgerMenu />
-        </button>
+        </button> */}
+        <div className="sm:hidden ">
+          <MobileNav />
+        </div>
 
         {/* navigation & cta */}
         <div className="sm:flex items-center gap-48 hidden">

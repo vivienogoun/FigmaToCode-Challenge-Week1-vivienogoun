@@ -16,7 +16,6 @@ import Section5ListItem from "@/components/section5/list-item";
 import ChevronLeft from "@/components/icons/chevron-left";
 import ChevronRight from "@/components/icons/chevron-right";
 import Review from "@/components/section6/review";
-import { motion } from "framer-motion";
 import ChevronBack from "@/components/icons/chevron-back";
 import ChevronForward from "@/components/icons/chevron-forward";
 
@@ -25,7 +24,7 @@ export default function Home() {
     // main content of the page i.e without header and footer
     <main className="flex min-h-screen flex-col items-center justify-between bg-[#F9FBFC] dark:bg-second">
       {/* section 1: presentation */}
-      <section className="bg-[#F2F7FF] flex flex-col items-center w-full p-0 sm:p-24 pb-0 relative">
+      <section className="bg-[#F2F7FF] flex flex-col items-center w-full p-0 sm:p-24 pb-0 relative z-0">
         <div className="flex flex-col-reverse sm:flex-row items-center mb-48 sm:mb-32 gap-12 sm:gap-0">
           {/* text content */}
           <div className="sm:w-[50%] flex justify-center">
