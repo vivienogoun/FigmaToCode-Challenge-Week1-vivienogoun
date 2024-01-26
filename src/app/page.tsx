@@ -119,7 +119,7 @@ export default function Home() {
       </section>
 
       {/* section 3: services */}
-      <section className="bg-[#F2F7FF] flex flex-col items-center gap-24 p-16 sm:p-24 w-full">
+      <section className="bg-[#F2F7FF] flex flex-col items-center gap-24 p-12 sm:p-24 w-full">
         {/* top section */}
         <div className="flex flex-col-reverse sm:flex-row justify-around items-center m-auto gap-8 sm:gap-24">
           {/* content */}
