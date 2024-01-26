@@ -8,11 +8,11 @@ import Link from "next/link";
 export default function Footer() {
   return (
     // wrapper
-    <div className="flex justify-center items-center bg-[#1678F2] py-16">
+    <div className="flex justify-center items-center bg-[#1678F2] py-8 sm:py-16">
       {/* content */}
-      <div className="flex flex-col items-center gap-14">
+      <div className="flex flex-col items-center gap-8 sm:gap-14">
         {/* infos */}
-        <div className="flex gap-24">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-24">
           {/* part 1 */}
           <div className="inline-flex flex-col items-start gap-6 mr-16">
             <div className="flex flex-col items-start gap-6">
@@ -105,7 +105,9 @@ export default function Footer() {
         </div>
 
         {/* divider */}
-        <div className="w-[1110px] h-[1px] opacity-60 bg-white"></div>
+        <div className="w-[400px] sm:w-[1110px] h-[1px] opacity-60 bg-white"></div>
+
+        {/* copyright */}
         <p className={`text-white ${sora.className} text-[16px] opacity-80`}>
           © Doctor all rights 2023 - Designed by remmcal
         </p>
