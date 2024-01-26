@@ -22,7 +22,7 @@ import ChevronForward from "@/components/icons/chevron-forward";
 export default function Home() {
   return (
     // main content of the page i.e without header and footer
-    <main className="flex min-h-screen flex-col items-center justify-between bg-[#F9FBFC] dark:bg-second">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-[#F9FBFC]">
       {/* section 1: presentation */}
       <section className="bg-[#F2F7FF] flex flex-col items-center w-full p-0 sm:p-24 pb-0 relative z-0">
         <div className="flex flex-col-reverse sm:flex-row items-center mb-48 sm:mb-32 gap-12 sm:gap-0">
