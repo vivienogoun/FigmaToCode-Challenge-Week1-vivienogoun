@@ -34,7 +34,7 @@ export default function Home() {
                 <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
                   Dr. Matthew Anderson
                 </p>
-                <p className="text-[#031432] text-center sm:text-left text-3xl sm:text-5xl font-bold tracking-[120%] max-w-[500px]">
+                <p className="text-[#031432] text-center sm:text-left text-2xl sm:text-5xl font-bold tracking-[120%] max-w-[500px]">
                   A dedicated doctor you can trust
                 </p>
                 <p
@@ -102,11 +102,11 @@ export default function Home() {
             <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
               About me
             </p>
-            <p className="text-dark text-[32px] leading-normal font-semibold">
+            <p className="text-dark text-3xl sm:text-[32px] leading-normal font-semibold">
               A dedicated doctor with the core mission to help
             </p>
             <p
-              className={`text-second ${sora.className} text-[16px] leading-6`}
+              className={`text-second ${sora.className} text-sm sm:text-[16px] leading-6`}
             >
               orem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin
               nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis
@@ -129,11 +129,11 @@ export default function Home() {
               <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
                 Services
               </p>
-              <p className="text-dark text-[32px] leading-normal font-semibold">
+              <p className="text-dark text-3xl sm:text-[32px] leading-normal font-semibold">
                 Experienced in multiple medical practices
               </p>
               <p
-                className={`text-second ${sora.className} text-[16px] leading-6`}
+                className={`text-second ${sora.className} text-sm sm:text-[16px] leading-6`}
               >
                 orem ipsum dolor sit amet, consectetur adipiscing elit. Egestas
                 egestas viverra turpis habitant eu sociis fermentum felis.
@@ -226,7 +226,7 @@ export default function Home() {
                   Schedule a virtual or presential appointment today
                 </p>
                 <p
-                  className={`text-white text-center ${sora.className} text-[16px] leading-6 opacity-80 max-w-[400px] sm:max-w-[676px]`}
+                  className={`text-white text-center ${sora.className} text-sm sm:text-[16px] leading-6 opacity-80 max-w-[400px] sm:max-w-[676px]`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Egestas egestas viverra turpis habitant eu sociis fermentum
@@ -272,7 +272,7 @@ export default function Home() {
 
         {/* details */}
         <div className="flex flex-col items-center gap-4">
-          <p className="text-dark text-center text-[32px] font-semibold max-w-[400px] sm:max-w-[800px]">
+          <p className="text-dark text-center text-3xl sm:text-[32px] font-semibold max-w-[400px] sm:max-w-[800px]">
             A dedicated doctor with the core mission to help
           </p>
           <p
