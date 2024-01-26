@@ -57,7 +57,6 @@ export default function Home() {
               alt=""
               width={679}
               height={517}
-              className=""
             />
           </div>
         </div>
@@ -87,7 +86,7 @@ export default function Home() {
         {/* image and plusicons */}
         <div
           id="section2-image"
-          className="rounded-3xl w-[400px] sm:w-[483px] h-[405px] relative"
+          className="rounded-3xl w-[385px] sm:w-[483px] h-[405px] relative"
         >
           <PlusIcon className="w-8 h-8 absolute -top-8 right-40" />
           <PlusIcon className="w-12 h-12 absolute -left-12 top-24" />
@@ -258,14 +257,14 @@ export default function Home() {
         {/* player */}
         <div
           id="video-player"
-          className="rounded-[32px] w-[400px] sm:w-[1012px] h-[385px] sm:h-[567px] flex justify-center items-center"
+          className="rounded-[32px] w-[385px] sm:w-[1012px] h-[385px] sm:h-[567px] flex justify-center items-center"
         >
           <Image
             src={"/section5/play-button.png"}
             alt="play button"
             width={100}
             height={100}
-            className="cursor-pointer"
+            className="cursor-pointer w-16 h-16 sm:w-24 sm:h-24"
           />
         </div>
 
