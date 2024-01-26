@@ -28,17 +28,17 @@ export default function Home() {
       <section className="bg-[#F2F7FF] flex flex-col items-center w-full p-0 sm:p-24 pb-0 relative">
         <div className="flex flex-col-reverse sm:flex-row items-center mb-48 sm:mb-32 gap-12 sm:gap-0">
           {/* text content */}
-          <div className="w-[50%] flex justify-center">
+          <div className="sm:w-[50%] flex justify-center">
             <div className="inline-flex flex-col items-center sm:items-start gap-8">
               <div className="flex flex-col items-center sm:items-start gap-4">
                 <p className="text-green text-[22px] leading-normal font-medium tracking-[.44px]">
                   Dr. Matthew Anderson
                 </p>
-                <p className="text-[#031432] text-center sm:text-left text-2xl sm:text-5xl font-bold tracking-[120%] max-w-[500px]">
+                <p className="text-[#031432] text-center sm:text-left text-3xl sm:text-5xl font-bold tracking-[120%] max-w-[325px] sm:max-w-[500px]">
                   A dedicated doctor you can trust
                 </p>
                 <p
-                  className={`${sora.className} text-center sm:text-left text-second text-sm sm:text-[16px] leading-6 max-w-[480px]`}
+                  className={`${sora.className} text-center sm:text-left text-second sm:text-[16px] leading-6 max-w-[325px] sm:max-w-[480px]`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Elementum eget vel, nunc nulla feugiat. Metus ut.
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
 
           {/* Object */}
-          <div className="w-[50%]">
+          <div className="sm:w-[50%]">
             <Image
               src={"/section1-graphics.png"}
               alt=""
@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* section 4: CTA */}
-      <section className="relative m-16 sm:m-24">
+      <section className="relative m-12 sm:m-24">
         {/* info box */}
         <div className="flex flex-col items-center gap-3">
           <p className="text-green text-center text-[22px] font-medium leading-normal tracking-[.44px]">
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* section 5: video */}
-      <section className="m-16 sm:m-24 flex flex-col items-center gap-8">
+      <section className="m-12 sm:m-24 flex flex-col items-center gap-8">
         <p className="text-green text-center text-[22px] font-medium tracking-[.44px]">
           Why Dr. Matthew Anderson?
         </p>
@@ -303,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* section 6: review */}
-      <section className="bg-[#F2F7FF] w-full p-16 sm:p-24 flex flex-col items-center gap-12">
+      <section className="bg-[#F2F7FF] w-full p-12 sm:p-24 flex flex-col items-center gap-12">
         {/* testimonials */}
         <div className="flex flex-col items-start gap-4 max-w-[676px]">
           <p className="text-dark text-center text-2xl sm:text-[32px] font-semibold max-w-[400px] sm:max-w-[none]">

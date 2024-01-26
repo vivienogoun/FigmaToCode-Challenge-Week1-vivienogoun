@@ -18,7 +18,7 @@ export default function Section5ListItem({
       }}
     >
       {icon}
-      <span className="text-white text-center text-lg leading-normal font-semibold">
+      <span className="text-white text-center text-[16px] sm:text-lg leading-normal font-semibold">
         {text}
       </span>
     </div>

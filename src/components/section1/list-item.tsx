@@ -14,14 +14,14 @@ export default function Section1ListItem({
 }: Section1ListItemProps) {
   return (
     <div
-      className="flex py-2 px-4 items-center gap-4 rounded-xl shadow-[0_8px_23px_0_rgba(65,132,247,0.24)]"
+      className="flex py-2 px-4 justify-center items-center gap-4 rounded-xl shadow-[0_8px_23px_0_rgba(65,132,247,0.24)]"
       style={{
         background: "linear-gradient(145deg, #1678F2 3.73%, #65A8FB 132.69%)",
       }}
     >
       {icon}
       <div className="flex flex-col justify-center items-start max-w-[200px]">
-        <p className="text-white text-center text-lg leading-normal font-semibold">
+        <p className="text-white text-center text-[16px] sm:text-lg leading-normal font-semibold">
           {title}
         </p>
         <p
