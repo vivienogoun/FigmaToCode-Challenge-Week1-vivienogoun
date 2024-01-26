@@ -3,24 +3,30 @@ import Image from "next/image";
 import Link from "next/link";
 import MainButton from "../buttons/main-button";
 import MessageCircleIcon from "../icons/message-circle";
+import HamburgerMenu from "../icons/hamburger-menu";
 
 export default function Header() {
   return (
     <div className="bg-[#F2F7FF] p-8">
-      <div className="flex items-center gap-48 m-auto max-w-fit">
+      <div className="flex justify-around items-end sm:items-center gap-48 sm:m-auto w-full sm:max-w-fit">
         {/* logo */}
         <Link href={"/"}>
           <Image
             src={"/logo.png"}
             alt="logo"
-            width={250}
-            height={150}
-            className="w-auto h-auto"
+            width={166}
+            height={65}
+            className="sm:w-auto sm:h-auto"
           />
         </Link>
 
+        {/* hamburger menu */}
+        <button className="sm:hidden">
+          <HamburgerMenu />
+        </button>
+
         {/* navigation & cta */}
-        <div className="flex items-center gap-48">
+        <div className="sm:flex items-center gap-48 hidden">
           <div className="flex justify-center items-center gap-12">
             <Link
               href={"/"}
